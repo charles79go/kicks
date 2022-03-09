@@ -36,6 +36,24 @@
         <type>Flexipage</type>
         <pageOrSobjectType>Contact</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Cash_Flow_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Cash_Flow__c</pageOrSobjectType>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Cash_Flow_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>Cash_Flow__c</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#17FD02</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
@@ -49,6 +67,7 @@
     <tabs>standard-home</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
+    <tabs>Cash_Flow__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Kicks_UtilityBar</utilityBar>
 </CustomApplication>

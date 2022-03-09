@@ -158,6 +158,21 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Cash_Flow__c.Expense_Type__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cash_Flow__c.Note__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Cash_Flow__c.Source__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.AccountId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -270,6 +285,17 @@
         <layout>Account-Account %28Kicks%29</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Cash_Flow__c-Cash Flow Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cash_Flow__c-Cash Flow Layout</layout>
+        <recordType>Cash_Flow__c.Capital</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Cash_Flow__c-Cash Flow Layout %28Expense%29</layout>
+        <recordType>Cash_Flow__c.Expense</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Contact-Contact %28Kicks%29</layout>
     </layoutAssignments>
     <objectPermissions>
@@ -290,6 +316,21 @@
         <object>Contact</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Cash_Flow__c.Capital</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Cash_Flow__c.Expense</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Cash_Flow__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>

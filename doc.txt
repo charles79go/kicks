@@ -1,0 +1,13 @@
+Account object
+1. Account(Kicks) layout created and layout changed in lightning app builder.
+2. Business Relationship picklist - Customer, Seller, Customer and Seller.
+3. Type (standard field) picklist - Business, Personal.
+4. Recent view list changed in Search layout
+5. list view buttons changed in search layout classic.
+6. Highlights panel changed in compact layout.
+
+Contact object
+1. Contact(Kicks) layout created and layout changed in lightning app builder.
+2. Recent view list changed in Search layout
+3. list view buttons changed in search layout classic.
+4. Highlights panel changed in compact layout.

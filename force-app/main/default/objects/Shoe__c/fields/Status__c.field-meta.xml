@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Expense_Type__c</fullName>
+    <fullName>Status__c</fullName>
     <externalId>false</externalId>
-    <label>Expense Type</label>
-    <required>false</required>
+    <label>Status</label>
+    <required>true</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -12,29 +12,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Misc</fullName>
+                <fullName>Bought - Pending Sale</fullName>
                 <default>false</default>
-                <label>Misc</label>
+                <label>Bought - Pending Sale</label>
             </value>
             <value>
-                <fullName>Bubble Wrap</fullName>
+                <fullName>Closed - Scammed</fullName>
                 <default>false</default>
-                <label>Bubble Wrap</label>
+                <label>Closed - Scammed</label>
             </value>
             <value>
-                <fullName>Envelope</fullName>
+                <fullName>Closed - Returned</fullName>
                 <default>false</default>
-                <label>Envelope</label>
+                <label>Closed - Returned</label>
             </value>
             <value>
-                <fullName>Postage</fullName>
+                <fullName>Sold</fullName>
                 <default>false</default>
-                <label>Postage</label>
-            </value>
-            <value>
-                <fullName>Shipping Box</fullName>
-                <default>false</default>
-                <label>Shipping Box</label>
+                <label>Sold</label>
             </value>
         </valueSetDefinition>
     </valueSet>

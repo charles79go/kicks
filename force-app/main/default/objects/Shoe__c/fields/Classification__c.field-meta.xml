@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Expense_Type__c</fullName>
+    <fullName>Classification__c</fullName>
     <externalId>false</externalId>
-    <label>Expense Type</label>
-    <required>false</required>
+    <label>Classification</label>
+    <required>true</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -12,29 +12,24 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Misc</fullName>
+                <fullName>Men&apos;s</fullName>
                 <default>false</default>
-                <label>Misc</label>
+                <label>Men&apos;s</label>
             </value>
             <value>
-                <fullName>Bubble Wrap</fullName>
+                <fullName>Women&apos;s</fullName>
                 <default>false</default>
-                <label>Bubble Wrap</label>
+                <label>Women&apos;s</label>
             </value>
             <value>
-                <fullName>Envelope</fullName>
+                <fullName>Boy&apos;s</fullName>
                 <default>false</default>
-                <label>Envelope</label>
+                <label>Boy&apos;s</label>
             </value>
             <value>
-                <fullName>Postage</fullName>
+                <fullName>Girl&apos;s</fullName>
                 <default>false</default>
-                <label>Postage</label>
-            </value>
-            <value>
-                <fullName>Shipping Box</fullName>
-                <default>false</default>
-                <label>Shipping Box</label>
+                <label>Girl&apos;s</label>
             </value>
         </valueSetDefinition>
     </valueSet>

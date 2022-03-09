@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Expense_Type__c</fullName>
+    <fullName>Size__c</fullName>
     <externalId>false</externalId>
-    <label>Expense Type</label>
-    <required>false</required>
+    <label>Size</label>
+    <required>true</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
@@ -12,29 +12,34 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Misc</fullName>
+                <fullName>6.0 M</fullName>
                 <default>false</default>
-                <label>Misc</label>
+                <label>6.0 M</label>
             </value>
             <value>
-                <fullName>Bubble Wrap</fullName>
+                <fullName>6.5 M</fullName>
                 <default>false</default>
-                <label>Bubble Wrap</label>
+                <label>6.5 M</label>
             </value>
             <value>
-                <fullName>Envelope</fullName>
+                <fullName>7.0 M</fullName>
                 <default>false</default>
-                <label>Envelope</label>
+                <label>7.0 M</label>
             </value>
             <value>
-                <fullName>Postage</fullName>
+                <fullName>6.0 W</fullName>
                 <default>false</default>
-                <label>Postage</label>
+                <label>6.0 W</label>
             </value>
             <value>
-                <fullName>Shipping Box</fullName>
+                <fullName>6.5 W</fullName>
                 <default>false</default>
-                <label>Shipping Box</label>
+                <label>6.5 W</label>
+            </value>
+            <value>
+                <fullName>7.0 W</fullName>
+                <default>false</default>
+                <label>7.0 W</label>
             </value>
         </valueSetDefinition>
     </valueSet>

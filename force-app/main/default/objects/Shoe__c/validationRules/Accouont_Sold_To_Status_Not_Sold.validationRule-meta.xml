@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accouont_Sold_To_Status_Not_Sold</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  OR( ISPICKVAL(Status__c, &quot;Bought - Pending Sale&quot;), 
+          ISPICKVAL(Status__c, &quot;Closed - Scammed&quot;),
+          ISPICKVAL(Status__c, &quot;Closed - Returned&quot;)
+         ), 
+       NOT(ISBLANK( Account_Sold_To__c )) 
+)</errorConditionFormula>
+    <errorDisplayField>Account_Sold_To__c</errorDisplayField>
+    <errorMessage>Must be blank when Status selected is Bought, Scammed, or Returned.</errorMessage>
+</ValidationRule>

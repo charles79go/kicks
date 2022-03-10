@@ -8,6 +8,7 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>Brand__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -37,5 +38,25 @@
                 <label>Model 2 Add</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Addidas</controllingFieldValue>
+            <valueName>Model 1 Add</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Addidas</controllingFieldValue>
+            <valueName>Model 2 Add</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Model 1 N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Model 2 N</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Model 3 N</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>

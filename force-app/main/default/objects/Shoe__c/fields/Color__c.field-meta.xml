@@ -8,6 +8,7 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>Model__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
@@ -52,5 +53,45 @@
                 <label>Addidas Greed 4</label>
             </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Model 1 N</controllingFieldValue>
+            <controllingFieldValue>Model 2 N</controllingFieldValue>
+            <controllingFieldValue>Model 3 N</controllingFieldValue>
+            <valueName>Nike Blue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 1 N</controllingFieldValue>
+            <controllingFieldValue>Model 2 N</controllingFieldValue>
+            <controllingFieldValue>Model 3 N</controllingFieldValue>
+            <valueName>Nike Red</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 1 N</controllingFieldValue>
+            <controllingFieldValue>Model 2 N</controllingFieldValue>
+            <valueName>Nike green 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 1 N</controllingFieldValue>
+            <controllingFieldValue>Model 2 N</controllingFieldValue>
+            <valueName>Nkie green 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 1 Add</controllingFieldValue>
+            <valueName>Addidas Blue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 1 Add</controllingFieldValue>
+            <controllingFieldValue>Model 2 Add</controllingFieldValue>
+            <valueName>Addidas Red</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 1 Add</controllingFieldValue>
+            <controllingFieldValue>Model 2 Add</controllingFieldValue>
+            <valueName>Addidas Green 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Model 2 Add</controllingFieldValue>
+            <valueName>Addidas Greed 4</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>

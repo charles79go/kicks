@@ -2,96 +2,215 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Color__c</fullName>
     <externalId>false</externalId>
-    <label>Color</label>
+    <label>Colorway</label>
     <required>true</required>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
-        <controllingField>Model__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Nike Blue</fullName>
+                <fullName>Black</fullName>
                 <default>false</default>
-                <label>Nike Blue</label>
+                <label>Black</label>
             </value>
             <value>
-                <fullName>Nike Red</fullName>
+                <fullName>Black/Red</fullName>
                 <default>false</default>
-                <label>Nike Red</label>
+                <label>Black/Red</label>
             </value>
             <value>
-                <fullName>Nike green 2</fullName>
+                <fullName>Black/Blue</fullName>
                 <default>false</default>
-                <label>Nike green 2</label>
+                <label>Black/Blue</label>
             </value>
             <value>
-                <fullName>Nkie green 4</fullName>
+                <fullName>Black/Black-Silver</fullName>
                 <default>false</default>
-                <label>Nkie green 4</label>
+                <label>Black/Black-Silver</label>
             </value>
             <value>
-                <fullName>Addidas Blue</fullName>
+                <fullName>Black/Charcoal</fullName>
                 <default>false</default>
-                <label>Addidas Blue</label>
+                <label>Black/Charcoal</label>
             </value>
             <value>
-                <fullName>Addidas Red</fullName>
+                <fullName>Black/Gold</fullName>
                 <default>false</default>
-                <label>Addidas Red</label>
+                <label>Black/Gold</label>
             </value>
             <value>
-                <fullName>Addidas Green 2</fullName>
+                <fullName>Black/Grey-Red</fullName>
                 <default>false</default>
-                <label>Addidas Green 2</label>
+                <label>Black/Grey-Red</label>
             </value>
             <value>
-                <fullName>Addidas Greed 4</fullName>
+                <fullName>Black/Red-White</fullName>
                 <default>false</default>
-                <label>Addidas Greed 4</label>
+                <label>Black/Red-White</label>
+            </value>
+            <value>
+                <fullName>Black/White</fullName>
+                <default>false</default>
+                <label>Black/White</label>
+            </value>
+            <value>
+                <fullName>Blue</fullName>
+                <default>false</default>
+                <label>Blue</label>
+            </value>
+            <value>
+                <fullName>Blue/Green-Gold</fullName>
+                <default>false</default>
+                <label>Blue/Green-Gold</label>
+            </value>
+            <value>
+                <fullName>Blush</fullName>
+                <default>false</default>
+                <label>Blush</label>
+            </value>
+            <value>
+                <fullName>Burgundy</fullName>
+                <default>false</default>
+                <label>Burgundy</label>
+            </value>
+            <value>
+                <fullName>Green</fullName>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+            <value>
+                <fullName>Grey/Silver</fullName>
+                <default>false</default>
+                <label>Grey/Silver</label>
+            </value>
+            <value>
+                <fullName>Grey/White-Grey</fullName>
+                <default>false</default>
+                <label>Grey/White-Grey</label>
+            </value>
+            <value>
+                <fullName>Multicolor</fullName>
+                <default>false</default>
+                <label>Multicolor</label>
+            </value>
+            <value>
+                <fullName>Orange</fullName>
+                <default>false</default>
+                <label>Orange</label>
+            </value>
+            <value>
+                <fullName>Pink</fullName>
+                <default>false</default>
+                <label>Pink</label>
+            </value>
+            <value>
+                <fullName>Red/Silver-Black</fullName>
+                <default>false</default>
+                <label>Red/Silver-Black</label>
+            </value>
+            <value>
+                <fullName>Red/White</fullName>
+                <default>false</default>
+                <label>Red/White</label>
+            </value>
+            <value>
+                <fullName>Royal</fullName>
+                <default>false</default>
+                <label>Royal</label>
+            </value>
+            <value>
+                <fullName>Salt</fullName>
+                <default>false</default>
+                <label>Salt</label>
+            </value>
+            <value>
+                <fullName>Silver</fullName>
+                <default>false</default>
+                <label>Silver</label>
+            </value>
+            <value>
+                <fullName>Slate</fullName>
+                <default>false</default>
+                <label>Slate</label>
+            </value>
+            <value>
+                <fullName>Stone</fullName>
+                <default>false</default>
+                <label>Stone</label>
+            </value>
+            <value>
+                <fullName>White</fullName>
+                <default>false</default>
+                <label>White</label>
+            </value>
+            <value>
+                <fullName>White/Black</fullName>
+                <default>false</default>
+                <label>White/Black</label>
+            </value>
+            <value>
+                <fullName>White/Black-Concord</fullName>
+                <default>false</default>
+                <label>White/Black-Concord</label>
+            </value>
+            <value>
+                <fullName>White/Black-Red</fullName>
+                <default>false</default>
+                <label>White/Black-Red</label>
+            </value>
+            <value>
+                <fullName>White/Blue</fullName>
+                <default>false</default>
+                <label>White/Blue</label>
+            </value>
+            <value>
+                <fullName>White/Blue-Black</fullName>
+                <default>false</default>
+                <label>White/Blue-Black</label>
+            </value>
+            <value>
+                <fullName>White/Grey</fullName>
+                <default>false</default>
+                <label>White/Grey</label>
+            </value>
+            <value>
+                <fullName>White/Metalic Purple</fullName>
+                <default>false</default>
+                <label>White/Metalic Purple</label>
+            </value>
+            <value>
+                <fullName>White/Royal</fullName>
+                <default>false</default>
+                <label>White/Royal</label>
+            </value>
+            <value>
+                <fullName>White/Red</fullName>
+                <default>false</default>
+                <label>White/Red</label>
+            </value>
+            <value>
+                <fullName>White/Silver</fullName>
+                <default>false</default>
+                <label>White/Silver</label>
+            </value>
+            <value>
+                <fullName>White/Silver-Navy</fullName>
+                <default>false</default>
+                <label>White/Silver-Navy</label>
+            </value>
+            <value>
+                <fullName>White/White-Navy</fullName>
+                <default>false</default>
+                <label>White/White-Navy</label>
+            </value>
+            <value>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+                <label>Yellow</label>
             </value>
         </valueSetDefinition>
-        <valueSettings>
-            <controllingFieldValue>Model 1 N</controllingFieldValue>
-            <controllingFieldValue>Model 2 N</controllingFieldValue>
-            <controllingFieldValue>Model 3 N</controllingFieldValue>
-            <valueName>Nike Blue</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 1 N</controllingFieldValue>
-            <controllingFieldValue>Model 2 N</controllingFieldValue>
-            <controllingFieldValue>Model 3 N</controllingFieldValue>
-            <valueName>Nike Red</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 1 N</controllingFieldValue>
-            <controllingFieldValue>Model 2 N</controllingFieldValue>
-            <valueName>Nike green 2</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 1 N</controllingFieldValue>
-            <controllingFieldValue>Model 2 N</controllingFieldValue>
-            <valueName>Nkie green 4</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 1 Add</controllingFieldValue>
-            <valueName>Addidas Blue</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 1 Add</controllingFieldValue>
-            <controllingFieldValue>Model 2 Add</controllingFieldValue>
-            <valueName>Addidas Red</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 1 Add</controllingFieldValue>
-            <controllingFieldValue>Model 2 Add</controllingFieldValue>
-            <valueName>Addidas Green 2</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Model 2 Add</controllingFieldValue>
-            <valueName>Addidas Greed 4</valueName>
-        </valueSettings>
     </valueSet>
 </CustomField>

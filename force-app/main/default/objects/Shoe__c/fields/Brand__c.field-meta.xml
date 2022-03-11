@@ -21,6 +21,11 @@
                 <default>false</default>
                 <label>Nike</label>
             </value>
+            <value>
+                <fullName>New Balance</fullName>
+                <default>false</default>
+                <label>New Balance</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

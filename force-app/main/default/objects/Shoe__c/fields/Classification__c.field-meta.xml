@@ -21,16 +21,6 @@
                 <default>false</default>
                 <label>Women&apos;s</label>
             </value>
-            <value>
-                <fullName>Boy&apos;s</fullName>
-                <default>false</default>
-                <label>Boy&apos;s</label>
-            </value>
-            <value>
-                <fullName>Girl&apos;s</fullName>
-                <default>false</default>
-                <label>Girl&apos;s</label>
-            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

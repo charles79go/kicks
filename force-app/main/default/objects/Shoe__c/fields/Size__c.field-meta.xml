@@ -8,9 +8,20 @@
     <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
+        <controllingField>Classification__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
+            <value>
+                <fullName>5.0 M</fullName>
+                <default>false</default>
+                <label>5.0 M</label>
+            </value>
+            <value>
+                <fullName>5.5 M</fullName>
+                <default>false</default>
+                <label>5.5 M</label>
+            </value>
             <value>
                 <fullName>6.0 M</fullName>
                 <default>false</default>
@@ -27,6 +38,91 @@
                 <label>7.0 M</label>
             </value>
             <value>
+                <fullName>7.5 M</fullName>
+                <default>false</default>
+                <label>7.5 M</label>
+            </value>
+            <value>
+                <fullName>8.0 M</fullName>
+                <default>false</default>
+                <label>8.0 M</label>
+            </value>
+            <value>
+                <fullName>8.5 M</fullName>
+                <default>false</default>
+                <label>8.5 M</label>
+            </value>
+            <value>
+                <fullName>9.0 M</fullName>
+                <default>false</default>
+                <label>9.0 M</label>
+            </value>
+            <value>
+                <fullName>9.5 M</fullName>
+                <default>false</default>
+                <label>9.5 M</label>
+            </value>
+            <value>
+                <fullName>10.0 M</fullName>
+                <default>false</default>
+                <label>10.0 M</label>
+            </value>
+            <value>
+                <fullName>10.5 M</fullName>
+                <default>false</default>
+                <label>10.5 M</label>
+            </value>
+            <value>
+                <fullName>11.0 M</fullName>
+                <default>false</default>
+                <label>11.0 M</label>
+            </value>
+            <value>
+                <fullName>11.5 M</fullName>
+                <default>false</default>
+                <label>11.5 M</label>
+            </value>
+            <value>
+                <fullName>12.0 M</fullName>
+                <default>false</default>
+                <label>12.0 M</label>
+            </value>
+            <value>
+                <fullName>12.5 M</fullName>
+                <default>false</default>
+                <label>12.5 M</label>
+            </value>
+            <value>
+                <fullName>13.5 M</fullName>
+                <default>false</default>
+                <label>13.5 M</label>
+            </value>
+            <value>
+                <fullName>14.0 M</fullName>
+                <default>false</default>
+                <label>14.0 M</label>
+            </value>
+            <value>
+                <fullName>14.5 M</fullName>
+                <default>false</default>
+                <label>14.5 M</label>
+            </value>
+            <value>
+                <fullName>15.0 M</fullName>
+                <default>false</default>
+                <label>15.0 M</label>
+            </value>
+            <value>
+                <fullName>5.0 W</fullName>
+                <default>false</default>
+                <label>5.0 W</label>
+            </value>
+            <value>
+                <fullName>5.5 W</fullName>
+                <default>false</default>
+                <label>5.5 W</label>
+            </value>
+            <value>
                 <fullName>6.0 W</fullName>
                 <default>false</default>
                 <label>6.0 W</label>
@@ -41,6 +137,196 @@
                 <default>false</default>
                 <label>7.0 W</label>
             </value>
+            <value>
+                <fullName>7.5 W</fullName>
+                <default>false</default>
+                <label>7.5 W</label>
+            </value>
+            <value>
+                <fullName>8.0 W</fullName>
+                <default>false</default>
+                <label>8.0 W</label>
+            </value>
+            <value>
+                <fullName>8.5 W</fullName>
+                <default>false</default>
+                <label>8.5 W</label>
+            </value>
+            <value>
+                <fullName>9.0 W</fullName>
+                <default>false</default>
+                <label>9.0 W</label>
+            </value>
+            <value>
+                <fullName>9.5 W</fullName>
+                <default>false</default>
+                <label>9.5 W</label>
+            </value>
+            <value>
+                <fullName>10.0 W</fullName>
+                <default>false</default>
+                <label>10.0 W</label>
+            </value>
+            <value>
+                <fullName>10.5 W</fullName>
+                <default>false</default>
+                <label>10.5 W</label>
+            </value>
+            <value>
+                <fullName>11.0 W</fullName>
+                <default>false</default>
+                <label>11.0 W</label>
+            </value>
+            <value>
+                <fullName>11.5 W</fullName>
+                <default>false</default>
+                <label>11.5 W</label>
+            </value>
+            <value>
+                <fullName>12.0 W</fullName>
+                <default>false</default>
+                <label>12.0 W</label>
+            </value>
         </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>5.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>5.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>6.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>6.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>7.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>7.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>8.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>8.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>9.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>9.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>10.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>10.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>11.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>11.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>12.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>12.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>13.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>14.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>14.5 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Men&apos;s</controllingFieldValue>
+            <valueName>15.0 M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>5.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>5.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>6.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>6.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>7.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>7.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>8.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>8.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>9.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>9.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>10.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>10.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>11.0 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>11.5 W</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Women&apos;s</controllingFieldValue>
+            <valueName>12.0 W</valueName>
+        </valueSettings>
     </valueSet>
 </CustomField>

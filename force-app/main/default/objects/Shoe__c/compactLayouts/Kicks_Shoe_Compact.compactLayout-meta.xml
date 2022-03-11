@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Kicks_Shoe_Compact</fullName>
+    <fields>Model__c</fields>
+    <fields>Brand__c</fields>
+    <fields>Color__c</fields>
+    <fields>Size__c</fields>
+    <fields>Profit__c</fields>
+    <label>Kicks Shoe Compact</label>
+</CompactLayout>

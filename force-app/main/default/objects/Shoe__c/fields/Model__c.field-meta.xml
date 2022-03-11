@@ -13,50 +13,185 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Model 1 N</fullName>
+                <fullName>Jordan 1 Low</fullName>
                 <default>false</default>
-                <label>Model 1 N</label>
+                <label>Jordan 1 Low</label>
             </value>
             <value>
-                <fullName>Model 2 N</fullName>
+                <fullName>Air Force 1</fullName>
                 <default>false</default>
-                <label>Model 2 N</label>
+                <label>Air Force 1</label>
             </value>
             <value>
-                <fullName>Model 3 N</fullName>
+                <fullName>Air Max Plus</fullName>
                 <default>false</default>
-                <label>Model 3 N</label>
+                <label>Air Max Plus</label>
             </value>
             <value>
-                <fullName>Model 1 Add</fullName>
+                <fullName>Dunk Low</fullName>
                 <default>false</default>
-                <label>Model 1 Add</label>
+                <label>Dunk Low</label>
             </value>
             <value>
-                <fullName>Model 2 Add</fullName>
+                <fullName>Dunk High</fullName>
                 <default>false</default>
-                <label>Model 2 Add</label>
+                <label>Dunk High</label>
+            </value>
+            <value>
+                <fullName>Jordan 1 Mid</fullName>
+                <default>false</default>
+                <label>Jordan 1 Mid</label>
+            </value>
+            <value>
+                <fullName>Jordan 1 High</fullName>
+                <default>false</default>
+                <label>Jordan 1 High</label>
+            </value>
+            <value>
+                <fullName>Jordan 3</fullName>
+                <default>false</default>
+                <label>Jordan 3</label>
+            </value>
+            <value>
+                <fullName>Jordan 4</fullName>
+                <default>false</default>
+                <label>Jordan 4</label>
+            </value>
+            <value>
+                <fullName>Jordan 5</fullName>
+                <default>false</default>
+                <label>Jordan 5</label>
+            </value>
+            <value>
+                <fullName>Jordan 11</fullName>
+                <default>false</default>
+                <label>Jordan 11</label>
+            </value>
+            <value>
+                <fullName>Jordan 11 Low</fullName>
+                <default>false</default>
+                <label>Jordan 11 Low</label>
+            </value>
+            <value>
+                <fullName>Jordan 12</fullName>
+                <default>false</default>
+                <label>Jordan 12</label>
+            </value>
+            <value>
+                <fullName>550</fullName>
+                <default>false</default>
+                <label>550</label>
+            </value>
+            <value>
+                <fullName>Ozelia</fullName>
+                <default>false</default>
+                <label>Ozelia</label>
+            </value>
+            <value>
+                <fullName>Yeezy 350</fullName>
+                <default>false</default>
+                <label>Yeezy 350</label>
+            </value>
+            <value>
+                <fullName>Yeezy 500</fullName>
+                <default>false</default>
+                <label>Yeezy 500</label>
+            </value>
+            <value>
+                <fullName>Yeezy 700</fullName>
+                <default>false</default>
+                <label>Yeezy 700</label>
+            </value>
+            <value>
+                <fullName>Yeezy Foam Runner</fullName>
+                <default>false</default>
+                <label>Yeezy Foam Runner</label>
+            </value>
+            <value>
+                <fullName>Yeezy Slides</fullName>
+                <default>false</default>
+                <label>Yeezy Slides</label>
             </value>
         </valueSetDefinition>
         <valueSettings>
             <controllingFieldValue>Addidas</controllingFieldValue>
-            <valueName>Model 1 Add</valueName>
+            <valueName>Ozelia</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Addidas</controllingFieldValue>
-            <valueName>Model 2 Add</valueName>
+            <valueName>Yeezy 350</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Addidas</controllingFieldValue>
+            <valueName>Yeezy 500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Addidas</controllingFieldValue>
+            <valueName>Yeezy 700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Addidas</controllingFieldValue>
+            <valueName>Yeezy Foam Runner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Addidas</controllingFieldValue>
+            <valueName>Yeezy Slides</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Nike</controllingFieldValue>
-            <valueName>Model 1 N</valueName>
+            <valueName>Jordan 1 Low</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Nike</controllingFieldValue>
-            <valueName>Model 2 N</valueName>
+            <valueName>Air Force 1</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Nike</controllingFieldValue>
-            <valueName>Model 3 N</valueName>
+            <valueName>Air Max Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Dunk Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Dunk High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 1 Mid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 1 High</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 11 Low</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nike</controllingFieldValue>
+            <valueName>Jordan 12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Balance</controllingFieldValue>
+            <valueName>550</valueName>
         </valueSettings>
     </valueSet>
 </CustomField>

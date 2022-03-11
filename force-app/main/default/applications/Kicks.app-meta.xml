@@ -72,6 +72,14 @@
         <type>Flexipage</type>
         <pageOrSobjectType>Shoe__c</pageOrSobjectType>
     </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>Kicks_Home</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+    </actionOverrides>
     <brand>
         <headerColor>#17FD02</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
@@ -87,6 +95,8 @@
     <tabs>standard-Contact</tabs>
     <tabs>Cash_Flow__c</tabs>
     <tabs>Shoe__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Kicks_UtilityBar</utilityBar>
 </CustomApplication>

@@ -6,31 +6,6 @@
     </applicationVisibilities>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Cash_Flow__c.Amount__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Cash_Flow__c.Expense_Type__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Cash_Flow__c.Note__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Cash_Flow__c.Source__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Shoe__c.Account_Sold_To__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Shoe__c.Profit__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -47,7 +22,7 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>User.Working_Capital__c</field>
-        <readable>false</readable>
+        <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Kicks app</label>

@@ -11,3 +11,7 @@ Contact object
 2. Recent view list changed in Search layout
 3. list view buttons changed in search layout classic.
 4. Highlights panel changed in compact layout.
+
+Cash flow object
+
+Shoe object

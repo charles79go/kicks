@@ -161,7 +161,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Cash Flows</pluralLabel>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <searchLayouts>
         <excludedStandardButtons>OpenListInQuip</excludedStandardButtons>
         <excludedStandardButtons>NewFromDocument</excludedStandardButtons>
@@ -172,7 +172,8 @@
         <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

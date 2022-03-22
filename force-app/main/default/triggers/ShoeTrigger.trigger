@@ -1,6 +1,3 @@
-//! ====================================================
-//! Needs to convert to FLOWS
-
 trigger ShoeTrigger on Shoe__c (before insert, before update, before delete) {
 
     switch on Trigger.operationType {
@@ -14,6 +11,5 @@ trigger ShoeTrigger on Shoe__c (before insert, before update, before delete) {
         when BEFORE_DELETE {
             ShoeTriggerHandler.updateWorkingCapitalOnDelete(Trigger.old);
         }
-        
     }
 }

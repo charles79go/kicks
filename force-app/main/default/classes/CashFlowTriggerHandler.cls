@@ -42,9 +42,7 @@ public with sharing class CashFlowTriggerHandler {
                     : recOwnerUserObj.Working_Capital__c - cf.Amount__c;  
             }
 
-            if(recOwnerUserObj.Working_Capital__c < 0) {
-                cf.addError('Working Capital of Record Owner (' + recOwnerUserObj.Name + ') cannot go less than zero.');
-            } 
+            KicksUtility.addErrorIfWorkingCapitalIsLessThanZero(cf, recOwnerUserObj);
         }
         update recOwnerUserObj;
     }
@@ -72,16 +70,14 @@ public with sharing class CashFlowTriggerHandler {
                 recOwnerUserObj.Working_Capital__c += cf.Amount__c; 
             }
 
-            if(recOwnerUserObj.Working_Capital__c < 0) {
-                cf.addError(' Capital of Record Owner (' + recOwnerUserObj.Name + ') cannot go less than zero.');
-            } 
+            KicksUtility.addErrorIfWorkingCapitalIsLessThanZero(cf, recOwnerUserObj);
         }
         update recOwnerUserObj;
     }
 
     public static void updateWorkingCapitalOnEdit(Map<Id, Cash_Flow__c> oldCfs, Map<Id, Cash_Flow__c> newCfs) {
 
-        // use map of users to handle multiple deleted records from mass delete. 
+        // use map of users to handle multiple updated records from list inline edit. 
         Map<Id, User> userMap = new Map<Id, User>();
 
         Set <Id> idSet = oldCfs.keySet();
@@ -90,6 +86,12 @@ public with sharing class CashFlowTriggerHandler {
 
             Cash_Flow__c oldCfObj = oldCfs.get(cfId);
             Cash_Flow__c newCfObj = newCfs.get(cfId);
+
+            //! don't update the working capital if System_Delete checkbox is checked.
+            //! this would be checked from the scheduled clean up function.
+            if(newCfObj.System_Delete__c) { 
+                continue;
+            }
 
             if(!userMap.containsKey(oldCfObj.OwnerId)) {
                 userMap.put(oldCfObj.OwnerId, [ SELECT Working_Capital__c, Name 
@@ -100,12 +102,6 @@ public with sharing class CashFlowTriggerHandler {
                 userMap.put(newCfObj.OwnerId, [ SELECT Working_Capital__c, Name 
                                                 FROM User 
                                                 WHERE Id = :newCfObj.OwnerId]);
-            }
-
-            //! don't update the working capital if System_Delete checkbox is checked.
-            //! this would be checked from the scheduled clean up function.
-            if(newCfObj.System_Delete__c) { 
-                continue;
             }
 
             // There is NO change in Record Ownership
@@ -140,9 +136,7 @@ public with sharing class CashFlowTriggerHandler {
                     }
                 }
 
-                if(recOwnerUserObj.Working_Capital__c < 0) {
-                    newCfObj.addError('Working Capital of Record Owner (' + recOwnerUserObj.Name + ') cannot go less than zero.');
-                } 
+                KicksUtility.addErrorIfWorkingCapitalIsLessThanZero(newCfObj, recOwnerUserObj);
 
             // There is CHANGE in Record Ownership
             } else {
@@ -185,13 +179,8 @@ public with sharing class CashFlowTriggerHandler {
                         newOwnerUserObj.Working_Capital__c -= newCfObj.Amount__c;
                     }
                 }
-
-                if(newOwnerUserObj.Working_Capital__c < 0) {
-                    newCfObj.addError('Working Capital of Record Owner (' + newOwnerUserObj.Name + ') cannot go less than zero.');
-                } 
-                if(oldOwnerUserObj.Working_Capital__c < 0 ) {
-                    newCfObj.addError('Working Capital of Record Owner (' + oldOwnerUserObj.Name + ') cannot go less than zero.');
-                } 
+                KicksUtility.addErrorIfWorkingCapitalIsLessThanZero(newCfObj, newOwnerUserObj);
+                KicksUtility.addErrorIfWorkingCapitalIsLessThanZero(oldCfObj, oldOwnerUserObj);
             }
         }
 

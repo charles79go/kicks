@@ -12,8 +12,15 @@
 
 public with sharing class CashFlowTriggerHandler {
 
-    final static String CAPTIAL_RECORD_TYPE = '012P00000032nUTIAY';
-    final static String EXPENSE_RECORD_TYPE = '012P00000032nUYIAY';
+    final static String CAPTIAL_RECORD_TYPE = Schema.SObjectType.Cash_Flow__c
+                                                .getRecordTypeInfosByName()
+                                                ?.get('Capital')
+                                                ?.getRecordTypeId();
+
+    final static String EXPENSE_RECORD_TYPE = Schema.SObjectType.Cash_Flow__c
+                                                .getRecordTypeInfosByName()
+                                                ?.get('Expense')
+                                                ?.getRecordTypeId();
 
     public static void updateWorkingCapitalOnCreate(List<Cash_Flow__c> newCashFlowObjs){
 
@@ -21,7 +28,7 @@ public with sharing class CashFlowTriggerHandler {
 
         for(Cash_Flow__c cf : newCashFlowObjs) {
 
-            recOwnerUserObj = [SELECT Working_Capital__c FROM User WHERE Id = :cf.OwnerId];
+            recOwnerUserObj = [SELECT Working_Capital__c, Name FROM User WHERE Id = :cf.OwnerId];
 
             if(cf.RecordTypeId == CAPTIAL_RECORD_TYPE) {
                 recOwnerUserObj.Working_Capital__c = recOwnerUserObj.Working_Capital__c == null 
@@ -34,6 +41,10 @@ public with sharing class CashFlowTriggerHandler {
                     ? cf.Amount__c 
                     : recOwnerUserObj.Working_Capital__c - cf.Amount__c;  
             }
+
+            if(recOwnerUserObj.Working_Capital__c < 0) {
+                cf.addError('Working Capital of Record Owner (' + recOwnerUserObj.Name + ') cannot go less than zero.');
+            } 
         }
         update recOwnerUserObj;
     }
@@ -50,7 +61,7 @@ public with sharing class CashFlowTriggerHandler {
                 continue;
             }
 
-            recOwnerUserObj = [SELECT Working_Capital__c FROM User WHERE Id = :cf.OwnerId];
+            recOwnerUserObj = [SELECT Working_Capital__c, Name FROM User WHERE Id = :cf.OwnerId];
 
             if(cf.RecordTypeId == CAPTIAL_RECORD_TYPE) {  
                 // reverse the action. need to subtract from working capital.
@@ -60,6 +71,10 @@ public with sharing class CashFlowTriggerHandler {
                 // reverse the action. need to add  from working capital.
                 recOwnerUserObj.Working_Capital__c += cf.Amount__c; 
             }
+
+            if(recOwnerUserObj.Working_Capital__c < 0) {
+                cf.addError(' Capital of Record Owner (' + recOwnerUserObj.Name + ') cannot go less than zero.');
+            } 
         }
         update recOwnerUserObj;
     }
@@ -77,10 +92,14 @@ public with sharing class CashFlowTriggerHandler {
             Cash_Flow__c newCfObj = newCfs.get(cfId);
 
             if(!userMap.containsKey(oldCfObj.OwnerId)) {
-                userMap.put(oldCfObj.OwnerId, [SELECT Working_Capital__c FROM User WHERE Id = :oldCfObj.OwnerId]);
+                userMap.put(oldCfObj.OwnerId, [ SELECT Working_Capital__c, Name 
+                                                FROM User 
+                                                WHERE Id = :oldCfObj.OwnerId]);
             }
             if(!userMap.containsKey(newCfObj.OwnerId)) {
-                userMap.put(newCfObj.OwnerId, [SELECT Working_Capital__c FROM User WHERE Id = :newCfObj.OwnerId]);
+                userMap.put(newCfObj.OwnerId, [ SELECT Working_Capital__c, Name 
+                                                FROM User 
+                                                WHERE Id = :newCfObj.OwnerId]);
             }
 
             //! don't update the working capital if System_Delete checkbox is checked.
@@ -120,6 +139,10 @@ public with sharing class CashFlowTriggerHandler {
                         recOwnerUserObj.Working_Capital__c -= newCfObj.Amount__c;
                     }
                 }
+
+                if(recOwnerUserObj.Working_Capital__c < 0) {
+                    newCfObj.addError('Working Capital of Record Owner (' + recOwnerUserObj.Name + ') cannot go less than zero.');
+                } 
 
             // There is CHANGE in Record Ownership
             } else {
@@ -162,8 +185,16 @@ public with sharing class CashFlowTriggerHandler {
                         newOwnerUserObj.Working_Capital__c -= newCfObj.Amount__c;
                     }
                 }
+
+                if(newOwnerUserObj.Working_Capital__c < 0) {
+                    newCfObj.addError('Working Capital of Record Owner (' + newOwnerUserObj.Name + ') cannot go less than zero.');
+                } 
+                if(oldOwnerUserObj.Working_Capital__c < 0 ) {
+                    newCfObj.addError('Working Capital of Record Owner (' + oldOwnerUserObj.Name + ') cannot go less than zero.');
+                } 
             }
         }
+
         List<User> listOfUsers = userMap.values();
         update listOfUsers;
     } 

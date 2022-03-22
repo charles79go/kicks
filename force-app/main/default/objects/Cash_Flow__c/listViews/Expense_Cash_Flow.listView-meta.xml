@@ -12,5 +12,5 @@
         <operation>equals</operation>
         <value>Cash_Flow__c.Expense</value>
     </filters>
-    <label>Expense Cash Flow</label>
+    <label>My Expense Cash Flow</label>
 </ListView>

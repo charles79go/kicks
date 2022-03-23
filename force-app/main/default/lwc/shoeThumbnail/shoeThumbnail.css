@@ -1,0 +1,45 @@
+.shoe-card {
+    background: #f3f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    min-height: 250px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+.shoe-card:hover {
+    box-shadow: 2px 2px 7px #b6b5b5;
+}
+
+.shoe-card .img-container {
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+}
+.shoe-card img {
+    height: 150px;
+    margin: auto;
+}
+.name {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.price-line {
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+}
+.price {
+    display: inline-block;
+    margin-left: 10px;
+}
+.brand {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+

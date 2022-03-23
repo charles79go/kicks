@@ -1,0 +1,11 @@
+<template>
+    <div class="shoe-card">
+        <div class="img-container"><img src={shoeData.thumbnail} alt="shoe image"></div>
+        <div class="name">{shoeData.shoeName}</div>
+        <div class="colorway">{shoeData.colorway}</div>
+        <div class="price-line">
+            <span class="price">$ {lowestPrice}</span>
+            <span class="brand">{lowestBrand}</span>
+        </div>
+    </div>
+</template>

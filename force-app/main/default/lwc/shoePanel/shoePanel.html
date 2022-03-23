@@ -1,0 +1,23 @@
+<template>
+    <div class="shoe-panel">
+        <lightning-tabset active-tab-value="one">
+            <lightning-tab label="Trending" value="one">
+                <div class="slds-text-heading_medium slds-m-bottom_large">Most Popular</div>
+                <div class="slds-grid slds-wrap slds-gutters" >
+                    <template if:true={dataLoaded}>
+                        <template for:each={products} for:item="product">
+                            <div key={product.styleID}  class="slds-col slds-size_1-of-3">
+                                <c-shoe-thumbnail 
+                                    shoe-data={product} ></c-shoe-thumbnail>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+            </lightning-tab>
+            <lightning-tab label="Search" value="two">
+                Search Sneakers
+            </lightning-tab>
+        </lightning-tabset>
+    </div>
+
+</template>

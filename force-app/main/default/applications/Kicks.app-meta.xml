@@ -91,6 +91,7 @@
     <label>Kicks</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
+    <tabs>Kicks_App_Page</tabs>
     <tabs>standard-Account</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>Cash_Flow__c</tabs>

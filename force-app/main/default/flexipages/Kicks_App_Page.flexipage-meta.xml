@@ -3,16 +3,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>workingCapital</componentName>
-                <identifier>c_workingCapital1</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
                 <componentName>shoePanel</componentName>
                 <identifier>c_shoePanel1</identifier>
             </componentInstance>
         </itemInstances>
+        <name>column1</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -27,12 +25,12 @@
                 <identifier>desktopDashboards_embeddedDashboard1</identifier>
             </componentInstance>
         </itemInstances>
-        <name>main</name>
+        <name>column2</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Kicks Home</masterLabel>
+    <masterLabel>Kicks App Page</masterLabel>
     <template>
-        <name>runtime_commerce_oci:homeTemplateOneRegion</name>
+        <name>flexipage:appHomeTemplateTwoColumns</name>
     </template>
-    <type>HomePage</type>
+    <type>AppPage</type>
 </FlexiPage>

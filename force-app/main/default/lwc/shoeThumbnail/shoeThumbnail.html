@@ -1,11 +1,11 @@
 <template>
-    <div class="shoe-card">
+    <div class="shoe-card" onclick={clickHandler}>
         <div class="img-container"><img src={shoeData.thumbnail} alt="shoe image"></div>
         <div class="name">{shoeData.shoeName}</div>
         <div class="colorway">{shoeData.colorway}</div>
         <div class="price-line">
-            <span class="price">$ {lowestPrice}</span>
-            <span class="brand">{lowestBrand}</span>
+            <span class="price">$ {lowest.price}</span>
+            <span class="brand">{lowest.brand}</span>
         </div>
     </div>
 </template>

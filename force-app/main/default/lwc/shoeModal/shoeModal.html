@@ -1,0 +1,27 @@
+<template>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open slds-modal_large">
+        <div class="slds-modal__container">
+
+          <div class="slds-modal__header">
+              <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate"><span class="label">{shoeData.make}</span></h1>
+              <p class="slds-m-top_x-small"><span class="slds-text-heading_small">{shoeData.colorway}</span></p>
+          </div>
+        
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <div class="modal-body-container">
+              <div class="img-container">
+                <img src={shoeData.thumbnail} alt="shoe image">
+              </div>
+              <div class="info-container">
+                <div class="description"><span class="slds-text-heading_small">{description}</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slds-modal__footer">
+              <button class="slds-button slds-button_neutral" onclick={backButtonHandler} aria-label="Back">Back</button>
+          </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+</template>

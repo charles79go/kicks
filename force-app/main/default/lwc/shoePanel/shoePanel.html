@@ -1,21 +1,68 @@
 <template>
+
+    <template if:true={sneakerDetailDataLoaded}>
+        <c-shoe-modal onclosemodal={closeModalHandler}
+                        shoe-data={sneakerDetail}></c-shoe-modal>
+    </template>
+
     <div class="shoe-panel">
         <lightning-tabset active-tab-value="one">
             <lightning-tab label="Trending" value="one">
+
                 <div class="slds-text-heading_medium slds-m-bottom_large">Most Popular</div>
+
+                    <template if:true={isLoading} >
+                        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+                    </template>
+
+                    <div class="slds-grid slds-wrap slds-gutters" >
+                        <template if:true={trendingDataLoaded}>
+                            <template for:each={trendingSneakers} for:item="sneaker">
+                                <div key={sneaker.styleID}  class="slds-col slds-size_1-of-3">
+                                    <c-shoe-thumbnail 
+                                        onsendshoedetail={onSneakerCardClick}
+                                        shoe-data={sneaker}></c-shoe-thumbnail>
+                                </div>
+                            </template>
+                        </template>
+                    </div>
+            
+            </lightning-tab>
+
+            <lightning-tab label="Search" value="two">
+
+                <div class="search-input-container">
+                    <lightning-input
+                        name="enter-search"
+                        label="Search Sneaker"
+                        type="search"
+                        onkeyup={handleSearchInput}
+                        value={searchText}
+                        class="input"
+                    ></lightning-input>
+                    <lightning-button label="Search" 
+                                    title="Non-primary action" 
+                                    onclick={handleSearchClick} 
+                                    class="search-button slds-m-left_x-small"></lightning-button>
+                </div>
+
+                <template if:true={isLoading} >
+                    <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+                </template>
+
                 <div class="slds-grid slds-wrap slds-gutters" >
-                    <template if:true={dataLoaded}>
-                        <template for:each={products} for:item="product">
-                            <div key={product.styleID}  class="slds-col slds-size_1-of-3">
+                    <template if:true={searchDataLoaded}>
+                        <template for:each={searchedSneakers} for:item="sneaker">
+                            <div key={sneaker.styleID}  class="slds-col slds-size_1-of-3">
                                 <c-shoe-thumbnail 
-                                    shoe-data={product} ></c-shoe-thumbnail>
+                                    onsendshoedetail={onSneakerCardClick}
+                                    shoe-data={sneaker} ></c-shoe-thumbnail>
                             </div>
                         </template>
                     </template>
                 </div>
-            </lightning-tab>
-            <lightning-tab label="Search" value="two">
-                Search Sneakers
+
+
             </lightning-tab>
         </lightning-tabset>
     </div>

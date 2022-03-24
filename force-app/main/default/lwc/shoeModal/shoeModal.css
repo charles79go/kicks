@@ -1,0 +1,24 @@
+.modal-body-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-container {
+    width: 55%;
+}
+
+.img-container {
+    width: 40%;
+}
+
+.description {
+    min-height: 100px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.label {
+    font-weight: 600;
+}

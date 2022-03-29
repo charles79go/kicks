@@ -8,12 +8,50 @@
           </div>
         
           <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
             <div class="modal-body-container">
+
               <div class="img-container">
                 <img src={shoeData.thumbnail} alt="shoe image">
               </div>
+
               <div class="info-container">
                 <div class="description"><span class="slds-text-heading_small">{description}</span></div>
+                <div class="slds-m-bottom_x-large slds-m-top_x-large">
+                  <div>From</div>
+                  <div class="slds-grid slds-gutters">
+                    <template for:each={lowestPrices} for:item="brand">
+                      <div class="slds-col" key={brand.id}>
+                        <span class="slds-m-right_small slds-text-heading_medium">${brand.price}</span> on 
+                        <span class="slds-text-heading_small slds-m-left_small" ><b>{brand.name}</b></span>
+                      </div>
+                    </template>
+                  </div>          
+                </div>
+
+                <div class="slds-box slds-box_small">
+                  <div class="slds-grid">
+
+                    <div class="slds-grid slds-grid_vertical slds-col  slds-size_1-of-6" style="height: 140px">
+                      <div class="slds-col slds-p-around_x-small slds-text-align_center" style="height: 45px"><b>Size</b></div>
+                      <div class="slds-col slds-p-around_x-small slds-text-align_center" style="height: 45px">Flight Club</div>
+                      <div class="slds-col slds-p-around_x-small slds-text-align_center" style="height: 45px">StockX</div>
+                    </div>
+
+                    <div class="slds-grid slds-gutters slds-gutters_x-small slds-size_5-of-6 slds-scrollable_x" style="height: 160px">
+                      <template for:each={priceChart} for:item="sizeObj">
+                        <div key={sizeObj.id} class="slds-grid slds-grid_vertical slds-col">
+                          <div class="slds-col slds-p-around_x-small slds-text-align_center" style="height: 45px"><b>{sizeObj._id}</b></div>
+                          <div class="slds-col slds-p-around_x-small slds-text-align_center" style="height: 45px">${sizeObj.flightClub}</div>
+                          <div class="slds-col slds-p-around_x-small slds-text-align_center" style="height: 45px">${sizeObj.stockX}</div>
+                        </div>
+                      </template>
+
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>

@@ -91,8 +91,6 @@ export default class ShoePanel extends LightningElement {
         }
 
         this.isLoading = false;
-
-        console.log('SNEAKER DETAIL >>>>', this.sneakerDetail);
     }
 
     handleSearchInput(evt) {
